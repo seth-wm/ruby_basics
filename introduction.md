@@ -1,8 +1,8 @@
-#Zaklady Ruby od Setha
+# Zaklady Ruby od Setha
 
 **Ahoj, ahoj, ahoj!**
 
-Vitejte v mem repozitari!
+## Vitejte v mem repozitari!
 
 V souborech obsazenych v tomto repozitari se dozvite, co vlastne Ruby je, jak vypada jeho syntaxe a kde jej pouzit.
 
@@ -16,7 +16,7 @@ S laskou,
 
 #Neco malo o Ruby
 
-**Ruby**
+## Ruby
   - interpretovany skriptovaci programovaci jazyk
   - plne objektove orientovany
   - snadna syntaxe
