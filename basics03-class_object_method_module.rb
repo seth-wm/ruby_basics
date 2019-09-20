@@ -19,3 +19,24 @@ class Car #deklarace tridy "Car"
     print("Vyrobce meho vozu: ",@my_manufacturer) #vypise string + hodnotu "Audi" na obrazovku
   end #konec tela metody
 end #konec tridy
+
+#--Modul--
+#V Ruby je vyznam modulu podobny tride. Modul je kolekce metod a konstant.
+#Metody v modulu mohou byt instancni nebo modulove.
+#Instancni metody jsou metody v tride, ve ktere je modul zahrnut.
+#Modulove metody mohou byt volany bez nutnosti vytvoreni zapouzdrujiciho objektu,
+#zatimco instancni metody nemohou.
+#Narozdil od trid nelze pomoci modulu vytvaret objekty nebo podtridy, navic nemuze vzniknout zadna hiearchie dedicnosti modulu.
+#module nameof_module
+# statementx
+# statementy
+# ...
+#end
+module Plc  #deklarace modulu "Plc" a zacatek jeho tela
+  @@ram = 24  #promenna "ram"
+  @@ram_unit = "kB" #promenna "ram_unit"
+  def Plc.concat_ram()  #metoda "concat_ram"
+    @@ramtot = @@ram.to_s+@@ram_unit  #pretypuje promennou "ram" na string a nasledne secte se stringem "ram_unit"
+    print @@ramtot  #vypise na obrazovku "24kB"
+  end #konec tela metody
+end #konec tela modulu
