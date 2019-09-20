@@ -27,3 +27,12 @@ puts "mike" == "mike" #vypise "true" na obrazovku
 puts "mike" == "emik" #vypise "false" na obrazovku
 puts "mike".eql? "mike" #vypise "true" na obrazovku
 puts "mike".casecmp "Mike" #vypise "0" - je obsazeno ve vyrazu (1 = neni obsazeno)
+
+#--Pole--
+#V jazyce Ruby lze pole deklarovat hned nekolika zpusoby
+#myArray = [2, 3, 4] - deklarace pole + jeho hodnot
+#myArray = Array.new - deklarace pole vytvorenim objektu tridy "Array" - bez parametru
+#myArray = Array.new(8) - deklarace pole vytvorenim objektu tridy "Array" - s urcenim poctu prvku
+#Velikost pole zjistime dvema zpusoby - metodou "size" nebo "length"
+#puts myArray.size - vypise velikost pole "myArray"na obrazovku - 10
+#puts myArray.length - vypise velikost pole "myArray"na obrazovku - 10
