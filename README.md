@@ -1,4 +1,1 @@
-##RUBY BASICS##
-Repozitar ruby_basics (mimochodem postupne doplnovany) obsahuje zakladni syntaxi a priklady pouziti jazyka Ruby.
-Soubory nejsou doplnovany periodicky.
-Preji prijemnou zabavu, a tak, no..
+V repozitari ruby_basics, jak uz nazev napovida, jsou obsazene soubory obsahujici popis syntaxe jazyka Ruby, jeho datovych typu, promennych, metod a jeho dalsich postupne doplnovanych soucasti.
