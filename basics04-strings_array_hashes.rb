@@ -47,3 +47,56 @@ values = [12,18,65,32,20]
 puts values[0]  #vypise prvni prvek pole "values" - "12"
 puts values[-2] #vypise druhy prvek OD KONCE pole "values" - "32"
 puts values[1,2]  #vypise druhy a treti prvek pole "values" - "18" a "65"
+#Dalsi moznosti pristupovani k prvkum je pomoci metody "at"
+puts values.at(2) #vypise treti prvek pole
+
+#Fetch
+#metoda pro urceni vychozi hodnoty erroru pri urceni rozsahu pole
+values = [12,18,65,32,20]
+puts values.fetch(20) #vypise defaultni chybu prekladace - pole ma 5 prvku
+puts values.fetch(20, "co zkousis??") #vypise hlasku "co zkousis??", nebot pole ma pouze 5 prvku
+
+#First & Last
+#metody pro vypsani prvniho (first) a posledniho (last) prvku daneho pole
+values = [12,18,65,32,20]
+puts values.first #vypise hodnotu prvniho prvku pole - "12"
+puts values.last  #vypise hodnotu posledniho prvku pole - "20"
+
+#Take
+#metoda vypisujici prvnich n prvku pole
+values = [12,18,65,32,20]
+puts values.take(3) #vypise prvni 3 hodnoty pole "values" - "12", "18", "65"
+
+#Drop
+#metoda vypisujici prvky, ktere nasleduji po n preskocenych prvcich
+values = [12,18,65,32,20]
+puts values.drop(4) #vypise paty prvek pole - "20" - prvni 4 byly preskoceny - vyrazeny z vyberu
+
+#Pridavani prvku do pole
+#lze provadet metodami push/<<, unshift nebo insert
+#push
+values = [12,18,65,32,20]
+puts values.push(21) #vypise vsechny prvky pole + pridany prvek "21"
+#unshift
+values = [12,18,65,32,20]
+puts values.unshift(69) #vypise vsechny prvky pole + prida prvek "69" na zacatek pole
+#insert
+values = [12,18,65,32,20]
+puts values.insert(15,2) # vypise cele pole + prida prvek "15" na pozici 2
+
+#Odebirani prvku z pole
+#metody pop, shift, delete a uniq
+#pop
+values = [12,18,65,32,20]
+puts values.pop #odebere posledni prvek z pole - "20" a vypise jej
+#shift
+values = [12,18,65,32,20]
+puts values.shift #odebere prvni prvek z pole - "12" a vypise jej
+#delete
+values = [12,18,65,32,20]
+puts values.delete(12)  #smaze prvek "12" z pole "values" a vypise jej
+#uniq
+values = [12,18,65,32,20,12]
+puts values.uniq  #vyhleda duplikatni prvky v poli a duplikat smaze, nasledne vypise zbyle hodnoty pole "values"
+
+
