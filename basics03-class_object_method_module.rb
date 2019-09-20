@@ -40,3 +40,18 @@ module Plc  #deklarace modulu "Plc" a zacatek jeho tela
     print @@ramtot  #vypise na obrazovku "24kB"
   end #konec tela metody
 end #konec tela modulu
+
+#modul se vola (zahrnuje) do programu nasledujicim zpusobem
+#reguire "moduleName"
+#volani metod probiha nasledne:
+#var = moduleName.method(moduleName::moduleVariable)
+require "Plc"
+ramstr = Plc.concat_ram()
+print ("Total random access memory of this PLC is ",ramstr)
+
+#do trid je mozne zahrnovat ruzne moduly
+#class MyClass
+  #require Module1
+  #require Module2
+  #..code..
+#end
