@@ -99,3 +99,42 @@ end
 #globalni - prisupne odkudkoliv v programu, deklarace s dolarem pred nazvem promenne
 $author = "YourWhiteMike" #deklarace globalni promenne "author", ke ktere lze pristupovat odkudkoliv v programu
 
+#--Datove typy--
+#V jazyce Ruby neprobiha deklarace promennych s uvadenim konktretniho datoveho typu,
+#nicmene i zde se datove typy deli na:
+#cisla
+#textove retezce (stringy)
+#symboly
+#hashe
+#pole
+#booly (boolean)
+
+#cisla
+#lze provadet kuprikladu aritmeticke operace
+#trida fixnum - normalni cisla - 1, 20, 255, 500,...
+#trida bignum - velka cisla - 11111111, 9999999993,...
+#trida float - cisla s desetinnou carkou - 23,41, 1,25,...
+#trida complex - komplexni (imaginarni) cisla - 4+2i
+#trida rational - frakcni cisla - 3/4, 5/3,...
+#trida bigdecimal - presna desetinna cisla - 4.0, 2.3,...
+
+#stringy
+#lze s nimi provadet ruzne operace - slucovani, parsovani, zjistovani delky retezce etc.
+
+#symboly
+#podobne stringum, deklarace s dvojteckou pred zacatkem vyrazu - :symbol.class_id
+
+#hashe
+#prirazuji dane hodnoty danym klicum, a to pomoci rovnitka a zavorky "vetsi, nez" (=>)
+#prirazeni: KLIC => HODNOTA, kde klic = string
+front = {"czech_rep" => "prague","england" => "london"}
+puts front["czech_rep"] #vypise hodnotu "prague" na obrazovku
+
+#pole
+#ukladaji data nebo seznam dat, ktere mohou byt jakehokoliv datoveho typu.
+#jednotlivym prvkum pole je prirazen index (0-n, v zavislosti na poctu prvku pole),
+#index prvku zavisi na jeho poradi
+listof_nums = [20,25,195,1]
+puts listof_nums[0] #na obrazovku vypise "20" - prvni prvek pole "listof_nums"
+puts listof_nums[2] #na obrazovku vypise "195" - treti prvek pole "listof_nums"
+
