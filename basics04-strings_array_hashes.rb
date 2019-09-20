@@ -33,6 +33,17 @@ puts "mike".casecmp "Mike" #vypise "0" - je obsazeno ve vyrazu (1 = neni obsazen
 #myArray = [2, 3, 4] - deklarace pole + jeho hodnot
 #myArray = Array.new - deklarace pole vytvorenim objektu tridy "Array" - bez parametru
 #myArray = Array.new(8) - deklarace pole vytvorenim objektu tridy "Array" - s urcenim poctu prvku
+
 #Velikost pole zjistime dvema zpusoby - metodou "size" nebo "length"
 #puts myArray.size - vypise velikost pole "myArray"na obrazovku - 10
 #puts myArray.length - vypise velikost pole "myArray"na obrazovku - 10
+
+#Dalsi z moznosti deklarace pole
+myArray = Array(1...10) #deklarace pole "myArray" s poctem 10 prvku - cisla 1 az 10
+puts "#{myArray}" # vypise [1,2,3,4,5,6,7,8,9] na obrazovku
+
+#Pristupovani k prvkum pole
+values = [12,18,65,32,20]
+puts values[0]  #vypise prvni prvek pole "values" - "12"
+puts values[-2] #vypise druhy prvek OD KONCE pole "values" - "32"
+puts values[1,2]  #vypise druhy a treti prvek pole "values" - "18" a "65"
