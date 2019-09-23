@@ -14,7 +14,7 @@ S laskou,
 
 **SETH**
 
-#Neco malo o Ruby
+## Neco malo o Ruby
 
 ## Ruby
   - interpretovany skriptovaci programovaci jazyk
