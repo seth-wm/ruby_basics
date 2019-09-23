@@ -99,4 +99,51 @@ puts values.delete(12)  #smaze prvek "12" z pole "values" a vypise jej
 values = [12,18,65,32,20,12]
 puts values.uniq  #vyhleda duplikatni prvky v poli a duplikat smaze, nasledne vypise zbyle hodnoty pole "values"
 
+#--Hash--
+#V jazyku Ruby jsou hashe kolekcemi unikatnich klicu s prirazenimi hodnotami.
+#Podobne jako pole, maji hashe indexy policek, s rozdilem, ze indexem (klicem) hashe
+#muze byt jakykoliv typ objektu.
+#Hash lze nazvat take jako asociativni pole, slovnik nebo mapu.
+#Pokud je k hashi pristupovano klicem, ktery neexistuje, volaci metoda vrati hodnotu typu nil.
+#Mame dva zpusoby deklarace:
+#nameOfHash = {"key1" => "value1","key2" => "value2","key3" => "value3"}
+#nameOfHash = {key1: 'value1',key2: 'value2',key3: 'value3'}
 
+gods = {  #deklarace asociativniho pole "gods"
+  "horus" => "egypt", #klic "horus" obsahujici hodnotu "egypt"
+  "cronus" => "greece", #klic "cronus" obsahujici hodnotu "greece"
+  "moloc" => "canaanine"  #klic "moloc" obsahujici hodnotu "canaanine"
+  }
+puts gods['cronus'] #vypise "greece" na obrazovku
+
+#Pridani prvku do hashe
+#nameOfHash['nameOfKey']="valueOfKey"
+gods['svarog'] = "slovenia" #prida klic "svarog" s hodnotou "slovenia" do hashe "gods"
+gods.each do |key,value|  #zacatek tela cyklu do, ktery pracuje s klicem a hodnotou hashe "gods"
+  puts "#{key} was the god of #{value}" #slouci klic a hodnotu se stringem -> "cronus was the god of greece"
+end #konec cyklu do
+
+#Metody hashe
+#verejne tridnu metody
+#Hash[obj] - vytvori novy hash s danymi objekty
+#new(obj) - navrati novy prazdny hash
+#try_convert(obj) - pokusi se konvertovat objekt "obj" na hash
+#verejne instancni metody
+#hash1==hash2 - porovna, zda jsou dva hashe shodne -> pokud obsahuji shodny klic a hodnotu
+#hash1[key] - nacte hodnotu prislusneho klice "key" z hashe "hash1"
+#hash[key] = val - klici "key" priradi novou hodnotu "val"
+#assoc(obj) - porovna "obj" v hashi
+#clear - odstrani vsechny klice s hodnotami v hashi
+#compare_by_identity - porovna klice dle jejich identity
+#compare_by_identity? - vrati hodnotu "true", pokud hash porovna sve klice dle identity
+#default(key=nil) - vrati defaultni hodnotu
+#default = obj - nastavi defaultni hodnotu
+#delete(key) - smaze klic a jeho hodnotu z hashe
+#each - blokove volani (1x) kazdeho klice v hashi
+#empty? - vrati hodnotu "true" pokud hash neobsahuje jediny klic s hodnotou (je prazdny)
+#eql>hash2 - vrati "true" pokud oba hashe obsahuji totozne klice a hodnoty
+#fetch(key[,default]) - vrati hodnotu zadaneho klice z hashe
+#has_key?(key) - vrati "true" pokud je klic "key" obsazen v hashi
+#has_value?(val) - vrati "true" pokud je hodnota "val" obsazena v nekterem klici daneho hashe
+#include?(key) - vrati hodnotu "true" pokud je klic obsazen v hashi
+#to_s/inspect - vrati obsah hashe jako textovy retezec
