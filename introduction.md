@@ -16,7 +16,7 @@ S laskou,
 
 ## Neco malo o Ruby
 
-## Ruby
+### Ruby
   - interpretovany skriptovaci programovaci jazyk
   - plne objektove orientovany
   - snadna syntaxe
